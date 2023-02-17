@@ -12,6 +12,11 @@
 
 ## pip
 
+Install requirements
+```
+pip install -r requirements.txt
+```
+
  Output all installed packages in your environment
 ```
 pip freeze > requirements.txt
