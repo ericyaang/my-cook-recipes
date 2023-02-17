@@ -8,10 +8,9 @@
 Instalando a versão escolhida
 ```
 pyenv install 3.8.0
-
 ```
-Verifique se deu certo
 
+Verifique se deu certo
 ```
 pyenv versions
 ```
@@ -37,9 +36,8 @@ python -V
 ## Configurando o ambiente virtual
 
 Crie o ambiente virtual
-```
-	python -m venv .venv
-  
+```	
+python -m venv .venv
  ```
  
  Ative o novo ambiente virtual
