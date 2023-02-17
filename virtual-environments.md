@@ -21,12 +21,23 @@ pip install -r requirements.txt
 ```
 pip freeze > requirements.txt
 ```
+
+pip in makefile:
+```
+venv:
+    python3 -m venv venv
+    source venv/bin/activate && \
+    python3 -m pip install pip setuptools wheel && \
+    python3 -m pip install -e .
+```
+
 ## venv
 ```
 python -m venv .venv
 . .venv/bin/activate
 ```
 ## pyenv + venv
+
 for different python versions:
 
 Install python 3.9.0
