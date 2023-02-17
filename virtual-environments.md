@@ -55,11 +55,19 @@ Install python 3.9.0
 pyenv install 3.9.0
 ```
 
-Set the python version
+Set the python version for current shell session
 ```
-venv shell 3.9.0
+pyenv shell 3.9.0
 ```
+or automatically select whenever you are in the current directory
+```
+pyenv local 3.9.0
+```
+or select globally for your user account
 
+```
+pyenv global 3.9.0
+```
 Create new environment with venv for some project
 ```
 python -m venv /home/user/python_venvs/new_project_env
