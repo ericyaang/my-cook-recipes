@@ -1,15 +1,22 @@
 # Index
 
 # Table of Contents
-1. [venv](#venv)
-2. [pyenv + venv](#pyenv+venv)
-3. [poetry](#poetry)
-4. [Tools](#tools)
-5. [Reads](#reads)
+
+1. [pip](#pip)
+2. [venv](#venv)
+3. [pyenv + venv](#pyenv+venv)
+4. [poetry](#poetry)
+5. [Tools](#tools)
+6. [Reads](#reads)
 
 
+## pip
+
+ Output all installed packages in your environment
+```
+pip freeze > requirements.txt
+```
 ## venv
-
 ```
 python -m venv .venv
 . .venv/bin/activate
@@ -36,8 +43,19 @@ Activate environment
 ```
 source /home/user/python_venvs/new_project_env/bin/activate
 ```
+Install all dependencies
 ```
 python -m pip install -r requirements.txt
+```
+## Conda
+
+Install a fresh conda environment
+```
+conda create -n env_name python=3.7
+```
+
+```
+conda env create -f environment.yaml
 ```
 ## poetry
 
@@ -84,6 +102,14 @@ For development dependencies
 poetry add --dev <package>
 ```
 
+If you want to see a list of all installed packages
+```
+poetry show
+```
+with a tree
+```
+poetry show --tree
+```
 If nothing works just use:
 ```
 pip install -r requirements.txt
