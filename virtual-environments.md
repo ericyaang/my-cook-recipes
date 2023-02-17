@@ -1,5 +1,11 @@
 # Index
 
+Workflow:
+* defina a versão do python a ser usada
+* Use pyenv para instalar a versão do python escolhida
+* Crie o diretório do projeto e nele crie um ambiente virtual com venv, virtualenv ou pyenv na versão do python escolhida
+* Instale o poetry
+
 # Table of Contents
 
 1. [pip](#pip)
@@ -40,6 +46,10 @@ python -m venv .venv
 
 for different python versions:
 
+List all avaibe versions
+```
+pyenv install --list
+```
 Install python 3.9.0
 ```
 pyenv install 3.9.0
