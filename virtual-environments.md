@@ -59,6 +59,11 @@ Set the python version for current shell session
 ```
 pyenv shell 3.9.0
 ```
+Deactivate current shell
+```
+pyenv shell --unset
+```
+
 or automatically select whenever you are in the current directory
 ```
 pyenv local 3.9.0
