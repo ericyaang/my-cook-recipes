@@ -1,1 +1,1 @@
-# my-cook-recipes
+# Some instructions for new projects
